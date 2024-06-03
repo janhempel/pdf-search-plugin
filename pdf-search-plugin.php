@@ -57,7 +57,7 @@ function pdf_search_form_shortcode() {
     ob_start();
     ?>
     <form id="pdf_search_form" method="post" action="">
-        <input placeholder="Suchbegriff" type="text" name="pdf_search_term" id="pdf_search_term"><br><br>
+        <input placeholder="Suchbegriff" pattern=".{3,}" required title="minimum 3 Zeichen" type="text" name="pdf_search_term" id="pdf_search_term"><br><br>
         <input type="submit" value="Suchen">
     </form>
     <div id="pdf_search_results"></div>
