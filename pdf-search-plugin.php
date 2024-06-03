@@ -16,7 +16,7 @@ function search_pdfs($search_term) {
     $results = [];
 
     foreach ($pdf_directories as $label => $dir) {
-        $command = escapeshellcmd("pdfgrep -ir '$search_term' $dir");
+        $command = escapeshellcmd("pdfgrep -irn '$search_term' $dir");
         $output = shell_exec($command);
 
         // Entfernen des spezifischen Verzeichnispfads und des nachfolgenden Schrägstrichs aus der Ausgabe
