@@ -5,11 +5,16 @@
     margin-top: 20px;
 }
 
+span.pdfsearch_result{
+    font-size: 0.9em;
+    color: #000000;
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% {  transform: rotate(359deg); }
 }
+
 #loading svg {
     animation: spin 2s linear infinite;
 

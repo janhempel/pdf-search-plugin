@@ -36,9 +36,9 @@ function pdf_search_ajax_handler() {
         $output = '';
 
         foreach ($results as $label => $result) {
-            $output .= '<h2>' . strtoupper($label) . '</h2>';
+            $output .= '<h3>' . strtoupper($label) . '</h3>';
             if ($result) {
-                $output .= nl2br($result);
+                $output .= '<span class="pdfsearch_result">' . nl2br($result) . '</span>';
             } else {
                 $output .= 'Keine Ergebnisse gefunden.';
             }
